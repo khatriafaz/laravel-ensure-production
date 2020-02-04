@@ -15,22 +15,23 @@ You can publish the config to change to configured domains for production:
 You will find a new config published `ensureproduction.php`.
 You should modify the domains array to list your domains:
 
-    return [
+```php
+return [
+	/**
+	 *	The domains for production must be added to this array
+	 */
+	'domains' => [
+		 'domain.com'
+	],
+
+	'override_config' => [
 		/**
-		 *	The domains for production must be added to this array
+		 *	You can override config variables for
+		 *	the configured domains above
 		 */
-		'domains' => [
-			 'domain.com'
-		],
 
-		'override_config' => [
-			/**
-			 *	You can override config variables for
-			 *	the configured domains above
-			 */
-
-			 'app.name' => 'Laravel'
-		]
-	];
-
+		 'app.name' => 'Laravel'
+	]
+];
+```
 And that's it, the configured domains will now work on the production configuration always.
