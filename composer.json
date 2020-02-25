@@ -1,6 +1,11 @@
 {
     "name": "khatriafaz/laravel-ensure-production",
-    "description": "This packages sets the production configuration automatically for laravel projects for the listed domains",
+    "description": "This package can give you helper functions to run python files right from PHP.",
+    "keywords": [
+        "khatriafaz",
+        "laravel-ensure-production"
+    ],
+    "homepage": "https://github.com/khatriafaz/laravel-ensure-production",
     "type": "library",
     "require": {
         "laravel/framework": "^6"
@@ -26,5 +31,12 @@
                 "Khatriafaz\\EnsureProductionServiceProvider"
             ]
         }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
     }
 }
