@@ -1,6 +1,6 @@
 <?php
 
-namespace Rakshitbharat\Pythoninphp\Tests;
+namespace Khatriafaz\Tests;
 
 use PHPUnit\Framework\TestCase;
 
